@@ -4,20 +4,20 @@ using namespace std;
 const int N = 50;
 
 void inputMatrix(int A[][N], int& n, int& m) {
-    cin>> n>> m;
-    for(int i = 0; i< n; ++i) {
-        for(int j = 0; j< m; ++j) {
-            cin>> A[i][j];
+    cin >> n >> m;
+    for(int i = 0; i < n; ++i) {
+        for(int j = 0; j < m; ++j) {
+            cin >> A[i][j];
         }
     }
 }
 
 void print(int A[][N], int n, int m) {
-    for(int i = 0; i< n; ++i) {
-        for(int j = 0; j< m; ++j) {
-            cout<< A[i][j]<< " ";
+    for(int i = 0; i < n; ++i) {
+        for(int j = 0; j < m; ++j) {
+            cout << A[i][j] << " ";
         }
-        cout<< endl;
+        cout << endl;
     }
 }
 
@@ -36,12 +36,12 @@ int main() {
     int A[N][N], B[N][N], C[N][N];
     char command;
 
-    cin>> command;
+    cin >> command;
     switch(command) {
     case 'e':
         inputMatrix(A, n1, m1);
         inputMatrix(B, n2, m2);
-        cout<< mEqual(A, n1, m1, B, n1, m2);
+        cout << mEqual(A, n1, m1, B, n1, m2) << endl;
         break;
     case 's':
         inputMatrix(A, n1, m1);
